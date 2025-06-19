@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans">
-    <!-- Navigation Bar -->
     <nav class="bg-white shadow-md fixed w-full z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
@@ -25,7 +24,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center justify-center relative bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
         <div class="absolute inset-0 bg-black bg-opacity-40"></div>
         <div class="text-center max-w-3xl mx-auto px-4 relative z-10 text-white">
@@ -34,11 +32,11 @@
             <a href="#contact" class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold hover:bg-green-100 transition">Get a Free Quote</a>
         </div>
         <script>
-            // Slideshow for hero section
+            
             const heroSection = document.querySelector('#home');
             const images = [
                 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-                '/Users/pranav/Desktop/New Folder With Items/landscaping.jpg'
+                'images/landscaping.jpg'
             ]
             let currentImageIndex = 0;
 
@@ -48,12 +46,10 @@
                 heroSection.style.transition = 'background-image 1s ease-in-out';
             }
 
-            // Change image every 5 seconds
             setInterval(changeBackgroundImage, 5000);
         </script>
     </section>
-
-    <!-- Services Section -->
+    
     <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Our Services</h2>
@@ -74,7 +70,6 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
     <section id="gallery" class="py-20 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Our Projects</h2>
@@ -101,7 +96,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">About ABC Landscaping</h2>
@@ -140,12 +134,10 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Get in Touch</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Map and Address -->
                 <div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Our Location</h3>
                     <p class="text-gray-600 mb-4">
@@ -166,7 +158,7 @@
                         </iframe>
                     </div>
                 </div>
-                <!-- Contact Form -->
+                
                 <div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Send Us a Message</h3>
                     <div class="bg-white p-6 rounded-lg shadow-md">
@@ -193,7 +185,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p>© 2025 ABC Landscaping. All rights reserved.</p>
@@ -202,7 +193,6 @@
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -212,7 +202,6 @@
             });
         });
 
-        // Contact form submission
         document.getElementById('submitBtn').addEventListener('click', function() {
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
